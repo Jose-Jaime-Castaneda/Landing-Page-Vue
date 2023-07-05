@@ -4,4 +4,9 @@
 
 .header {
   background: var(--navbar-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 5px 10%;
 }
