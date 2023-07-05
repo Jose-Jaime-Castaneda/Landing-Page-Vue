@@ -20,9 +20,7 @@
       <router-link class="toggle" to="/">
         <button class="btn-toggle">Contacto</button>
       </router-link>
-
-      <a class="meun-responsive"><button></button></a>
-
+      <img class="barras" src="../resources/bars-solid.svg" alt="MyLogo" />
     </header>
     <router-view />
   </div>

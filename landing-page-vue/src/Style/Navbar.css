@@ -51,9 +51,20 @@
   cursor: pointer;
 }
 
+.barras {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .navbar,
   .toggle {
     display: none;
+  }
+
+  .barras {
+    display: inline-flex;
+    height: 30px;
+    width: auto;
+    filter: invert(100%);
   }
 }
