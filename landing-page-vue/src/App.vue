@@ -1,19 +1,26 @@
 <template>
   <div id="app">
-    <nav class="navbar">
+    <header class="header">
       <div class="empresa">
         <a href="" class="logo">Mi compañia</a>
       </div>
-      <div class="menu-navbar">
+      <nav class="navbar">
         <ul class="navbar-ul">
-          <i><a href="">Inicio</a></i>
-          <i><a href="">Acerca de</a></i>
-          <i><a href="">PYR</a></i>
-          <i><a href="">Contacto</a></i>
+          <i class="navbar-item">
+            <router-link to="/" class="navbar-link">Inicio</router-link>
+          </i>
+          <i class="navbar-item">
+            <router-link to="/" class="navbar-link">Acerca de</router-link>
+          </i>
+          <i class="navbar-item">
+            <router-link to="/faq" class="navbar-link">PyR</router-link>
+          </i>
         </ul>
-      </div>
-      <button class="navbar-toggle">azs</button>
-    </nav>
+      </nav>
+      <router-link class="toggle" to="/">
+        <button class="btn-toggle">Contacto</button>
+      </router-link>
+    </header>
     <router-view />
   </div>
 </template>

@@ -2,7 +2,6 @@
   --navbar-bg: #006381;
 }
 
-.navbar {
-  width: 100%;
+.header {
   background: var(--navbar-bg);
 }
