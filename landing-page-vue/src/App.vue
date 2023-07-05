@@ -2,7 +2,7 @@
   <div id="app">
     <header class="header">
       <div class="empresa">
-        <a href="" class="logo">Mi compañia</a>
+        <router-link to="/" class="logo">Mi compañia</router-link>
       </div>
       <nav class="navbar">
         <ul class="navbar-ul">

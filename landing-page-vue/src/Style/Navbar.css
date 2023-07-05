@@ -2,6 +2,10 @@
 
 :root {
   --navbar-bg: #006381;
+  --texto: "Monda";
+  --tamaño-txt-logo: 18px;
+  --tamaño-txt-link: 14px;
+  --color-contraste: #00ffdc;
 }
 
 .header {
@@ -13,9 +17,32 @@
   padding: 5px 10%;
 }
 
-.empresa .logo {
+.empresa .logo,
+.navbar-item .navbar-link {
   text-decoration: none;
   color: #fff;
-  font-size: 16px;
-  font-family: "Monda", sans-serif;
+  font-size: var(--tamaño-txt-logo);
+  font-family: var(--texto);
+}
+
+.header .navbar-ul {
+  list-style: none;
+}
+
+.navbar-ul .navbar-item {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.navbar-item .navbar-link {
+  font-size: var(--tamaño-txt-link);
+}
+
+.toggle .btn-toggle {
+  border: 2px solid var(--color-contraste);
+  border-radius: 1px;
+  padding: 5px 30px;
+  background: inherit;
+  color: var(--color-contraste);
+  cursor: pointer;
 }
