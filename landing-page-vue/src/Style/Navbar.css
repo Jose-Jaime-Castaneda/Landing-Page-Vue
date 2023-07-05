@@ -1,5 +1,8 @@
+:root {
+  --navbar-bg: #006381;
+}
+
 .navbar {
   width: 100%;
-  height: 50px;
-  background: red;
+  background: var(--navbar-bg);
 }
