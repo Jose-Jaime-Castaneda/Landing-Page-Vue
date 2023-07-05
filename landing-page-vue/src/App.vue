@@ -20,7 +20,12 @@
       <router-link class="toggle" to="/">
         <button class="btn-toggle">Contacto</button>
       </router-link>
-      <img class="barras" src="../resources/bars-solid.svg" alt="MyLogo" />
+      <img
+        v-on:click="menuResponsive"
+        class="barras"
+        src="../resources/bars-solid.svg"
+        alt="MyLogo"
+      />
     </header>
     <router-view />
   </div>
@@ -30,8 +35,8 @@
 export default {
   name: "App",
   methods: {
-    handleClick() {
-      console.log("Evento lanzado");
+    menuResponsive() {
+      console.log("Menu Responsivo");
     },
   },
 };
