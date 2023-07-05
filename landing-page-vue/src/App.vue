@@ -20,6 +20,9 @@
       <router-link class="toggle" to="/">
         <button class="btn-toggle">Contacto</button>
       </router-link>
+
+      <a class="meun-responsive"><button></button></a>
+
     </header>
     <router-view />
   </div>
