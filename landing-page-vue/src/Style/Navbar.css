@@ -11,7 +11,7 @@
 .header {
   background: var(--navbar-bg);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   height: 40px;
   padding: 5px 10%;
@@ -23,6 +23,10 @@
   color: #fff;
   font-size: var(--tamaño-txt-logo);
   font-family: var(--texto);
+}
+
+.empresa {
+  margin-right: auto;
 }
 
 .header .navbar-ul {
