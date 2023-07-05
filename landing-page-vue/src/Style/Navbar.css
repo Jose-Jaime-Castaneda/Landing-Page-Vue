@@ -50,3 +50,10 @@
   color: var(--color-contraste);
   cursor: pointer;
 }
+
+@media screen and (max-width: 767px) {
+  .navbar,
+  .toggle {
+    display: none;
+  }
+}

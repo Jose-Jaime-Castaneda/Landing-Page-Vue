@@ -28,6 +28,11 @@
 <script>
 export default {
   name: "App",
+  methods: {
+    handleClick() {
+      console.log("Evento lanzado");
+    },
+  },
 };
 </script>
 
