@@ -1,3 +1,8 @@
+:root {
+  --texto: "Monda";
+  --color-contraste: #00BBBB;
+}
+
 .home {
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -7,6 +12,42 @@
   );
 }
 
-h1 {
-  color: red;
+.Main {
+  display: flex;
+  flex-direction: column;
+}
+
+.MainTitle {
+  width: 60%;
+  margin: 4rem 0 2rem 4rem;
+}
+
+.MainTitle h1 {
+  font-family: var(--texto);
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 3.5rem;
+}
+
+.Description, .btnServicios {
+  width: 65%;
+  margin: 0 0 2rem 4rem;
+}
+
+.Description p {
+  font-family: var(--texto);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.btnServicios .boton {
+  border-radius: 1px;
+  padding: 6px 20px;
+  background: var(--color-contraste);
+  color: #fff;
+  font-family: var(--texto);
+  font-size: 1.4rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
