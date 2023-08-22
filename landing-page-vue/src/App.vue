@@ -23,20 +23,36 @@
       <img
         v-on:click="menuResponsive"
         class="barras"
-        src="../resources/bars-solid.svg"
-        alt="MyLogo"
+        :src="menuVisible ? '../resources/xmark-solid.svg' : '../resources/bars-solid.svg'"
+        alt="Menu-Responsive"
       />
     </header>
     <router-view />
+    <!-- Div del menú responsivo -->
+    <div class="menu-responsivo" v-show="menuVisible">
+      <ul>
+        <li><router-link to="/">Inicio</router-link></li>
+        <li><router-link to="/">Acerca de</router-link></li>
+        <li><router-link to="/faq">PyR</router-link></li>
+        <router-link class="toggleR" to="/">
+          <button class="btn-toggleR">Contacto</button>
+        </router-link>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: "App",
+  data() {
+    return {
+      menuVisible: false,
+    };
+  },
   methods: {
     menuResponsive() {
-      console.log("Menu Responsivo");
+      this.menuVisible = !this.menuVisible;
     },
   },
 };
