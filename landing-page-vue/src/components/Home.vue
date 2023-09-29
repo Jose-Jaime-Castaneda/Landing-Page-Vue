@@ -1,21 +1,26 @@
 <template>
-  <div class="home">
-    <main class="Main">
-      <div class="MainTitle">
-        <h1>Avanzando hacia el futuro</h1>
-      </div>
-      <article class="Description">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
-          consequuntur asperiores pariatur iure illum quasi enim placeat neque,
-          similique voluptatibus autem ab at quisquam, debitis deserunt ipsam
-          labore corporis soluta!
-        </p>
-      </article>
-      <div class="btnServicios">
-        <button class="boton">Nuestros servicios</button>
-      </div>
-    </main>
+  <div>
+    <div class="home">
+      <main class="Main">
+        <div class="MainTitle">
+          <h1>Avanzando hacia el futuro</h1>
+        </div>
+        <article class="Description">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+            consequuntur asperiores pariatur iure illum quasi enim placeat
+            neque, similique voluptatibus autem ab at quisquam, debitis deserunt
+            ipsam labore corporis soluta!
+          </p>
+        </article>
+        <div class="btnServicios">
+          <button class="boton">Nuestros servicios</button>
+        </div>
+      </main>
+    </div>
+    <section class="SectionMain">
+      <img src="../../resources/check-circle-solid.png" alt="" />
+    </section>
   </div>
 </template>
 
