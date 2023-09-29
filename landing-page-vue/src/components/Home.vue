@@ -19,7 +19,49 @@
       </main>
     </div>
     <section class="SectionMain">
-      <img src="../../resources/check-circle-solid.png" alt="" />
+      <div class="SectionMain-div1">
+        <div class="imgContainer">
+          <img src="../../resources/check-circle-solid.png" alt="" />
+        </div>
+        <div class="sectionText1">
+          <p>
+            Ofrecemos servicos para todo tipo de empresa, comercio y/o
+            emprendimiento.
+          </p>
+        </div>
+        <div class="sectionText2">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos,
+            saepe. Velit dicta incidunt.
+          </p>
+        </div>
+      </div>
+      <div class="SectionMain-div2">
+        <div class="Opiniones">
+          <p>
+            “Opinion de cliente referente a nuestros servicios 1”<br /><br /><span
+              class="usuario"
+              >-Juan Juanin</span
+            >
+          </p>
+        </div>
+        <div class="Opiniones">
+          <p>
+            “Opinion de cliente referente a nuestros servicios 2”<br /><br /><span
+              class="usuario"
+              >-Juana Juanina</span
+            >
+          </p>
+        </div>
+        <div class="Opiniones">
+          <p>
+            “Opinion de cliente referente a nuestros servicios 3”<br /><br /><span
+              class="usuario"
+              >-George de la Selva</span
+            >
+          </p>
+        </div>
+      </div>
     </section>
   </div>
 </template>

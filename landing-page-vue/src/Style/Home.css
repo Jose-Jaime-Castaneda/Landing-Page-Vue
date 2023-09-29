@@ -1,6 +1,11 @@
+/* * {
+  border-width: 1px;
+  border: dotted;
+} */
+
 :root {
   --texto: "Monda";
-  --color-contraste: #00BBBB;
+  --color-contraste: #00bbbb;
 }
 
 .home {
@@ -29,12 +34,14 @@
   line-height: 3.5rem;
 }
 
-.Description, .btnServicios {
+.Description,
+.btnServicios {
   width: 65%;
   margin: 0 0 2rem 4rem;
 }
 
-.Description p {
+.Description p,
+.sectionText1 p {
   font-family: var(--texto);
   font-weight: 500;
   font-size: 1.2rem;
@@ -50,4 +57,64 @@
   cursor: pointer;
   outline: none;
   border: none;
+}
+
+/* Estilos para el section*/
+
+.SectionMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.SectionMain-div1,
+.SectionMain-div2 {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.imgContainer,
+.sectionText1,
+.sectionText2 {
+  display: flex;
+  align-items: center;
+}
+
+.sectionText1,
+.sectionText2 {
+  width: 400px;
+}
+
+.sectionText1 p {
+  color: #1E1E1E;
+}
+
+.sectionText2 p {
+  font-family: var(--texto);
+  color: #706E6E;
+}
+
+.Opiniones {
+  width: 300px;
+}
+
+.Opiniones p {
+  color: #4D4C4C;
+  font-family: var(--texto);
+}
+
+.usuario{
+  color: #898686;
+}
+
+/* Estilos extra para vista movil */
+@media screen and (max-width: 767px) {
+  .Opiniones p{
+    margin-bottom: 2rem;
+  }
 }
