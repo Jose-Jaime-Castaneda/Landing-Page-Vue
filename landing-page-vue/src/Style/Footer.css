@@ -1,0 +1,50 @@
+* {
+}
+
+:root {
+  --texto: "Monda";
+}
+
+.footer {
+  background: #00bbbb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer:nth-child(1) {
+  justify-content: center;
+}
+
+.footer > .texto {
+  width: 70%;
+}
+
+.texto > .siguenos {
+  font-family: var(--texto);
+  color: #fff;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.redes {
+  display: flex;
+}
+
+.redes > .facebook,
+.redes > .twitter {
+  width: 20%;
+}
+
+.facebook > img,
+.twitter > img {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .footer:nth-child(2) {
+    justify-content: center;
+  }
+}
