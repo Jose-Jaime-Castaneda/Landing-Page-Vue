@@ -78,12 +78,18 @@
         </p>
       </section>
     </div>
+    <Footer />
   </section>
 </template>
 
 <script>
+import Footer from "./Footer.vue";
+
 export default {
   name: "faq",
+  components: {
+    Footer,
+  },
 };
 </script>
 
