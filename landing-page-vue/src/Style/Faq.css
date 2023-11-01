@@ -1,0 +1,68 @@
+/* * {
+  border-width: 1px;
+  border: dotted;
+} */
+
+:root {
+  --texto: "Monda";
+}
+
+.faq {
+  background: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.encabezado {
+  width: 80%;
+}
+
+.encabezado > h2,
+p {
+  font-family: var(--texto);
+  padding-bottom: 15px;
+}
+
+.encabezado > h2 {
+  font-size: 50px;
+  font-weight: 300;
+  padding-top: 30px;
+}
+
+.encabezado > p {
+  font-size: 16px;
+}
+
+.opinion-section {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: #dfdede;
+}
+
+.opinions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.opinions > p {
+  font-size: 16px;
+  text-align: left;
+  max-width: 350px;
+  min-width: 300px;
+  margin-bottom: 20px;
+}
+
+.opinion > .answer {
+  color: gray;
+}
+
+@media screen and (max-width: 767px) {
+  .opinions > p {
+    text-align: center;
+  }
+}

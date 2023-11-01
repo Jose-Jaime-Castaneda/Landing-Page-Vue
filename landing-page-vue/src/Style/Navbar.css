@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap");
+
+:root {
+  --navbar-bg: #006381;
+  --texto: "Monda";
+  --tamaño-txt-logo: 18px;
+  --tamaño-txt-link: 14px;
+  --color-contraste: #00ffdc;
+}
+
+.header {
+  background: var(--navbar-bg);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
+  padding: 5px 10%;
+}
+
+.empresa .logo,
+.navbar-item .navbar-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: var(--tamaño-txt-logo);
+  font-family: var(--texto);
+}
+
+.empresa {
+  margin-right: auto;
+}
+
+.header .navbar-ul {
+  list-style: none;
+}
+
+.navbar-ul .navbar-item {
+  display: inline-block;
+  padding: 0 30px;
+}
+
+.navbar-item .navbar-link {
+  font-size: var(--tamaño-txt-link);
+}
+
+.toggle .btn-toggle {
+  border: 2px solid var(--color-contraste);
+  border-radius: 1px;
+  padding: 5px 30px;
+  background: inherit;
+  color: var(--color-contraste);
+  cursor: pointer;
+}
+
+.barras {
+  display: none;
+}
+/*
+  Clases menú responsivo
+*/
+.menu-responsivo {
+  position: absolute;
+  top: 50px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 97%;
+}
+
+.menu-responsivo ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-responsivo li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #979797;
+}
+
+.menu-responsivo a {
+  padding-left: 10px;
+  text-decoration: none;
+  color: #000;
+  font-family: var(--texto);
+  font-size: var(--tamaño-txt-link);
+}
+
+.toggleR .btn-toggleR {
+  border: 2px solid var(--color-contraste);
+  border-radius: 1px;
+  padding: 5px 30px;
+  background: inherit;
+  color: var(--color-contraste);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar,
+  .toggle {
+    display: none;
+  }
+
+  .barras {
+    display: inline-flex;
+    height: 30px;
+    width: auto;
+    filter: invert(100%);
+  }
+}
